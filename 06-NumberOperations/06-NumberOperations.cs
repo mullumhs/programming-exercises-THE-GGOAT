@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using System;
+
 
 /*
 ===============================================================================
@@ -53,7 +55,19 @@ namespace ProgrammingExercisesIST
             double x = Convert.ToDouble(Console.ReadLine());
 
             // Your code goes below here
+            Console.WriteLine("Please enter a number for Y:");
+            double y = Convert.ToDouble(Console.ReadLine());
 
+            //Add
+            Console.WriteLine($"{x} plus {y} = {x + y}");
+
+            Console.WriteLine($"{x} minus {y} = {x - y}");
+
+            Console.WriteLine($"{x} times {y} = {x * y}");
+
+            Console.WriteLine($"{x} divided {y} = {x / y}");
+
+            Console.ReadLine();
         }
     }
 }
