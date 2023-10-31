@@ -44,8 +44,28 @@ namespace ProgrammingExercisesIST
         {
             // Ask the user to pick a door
             Console.WriteLine("Pick a Door: 1, 2 or 3");
-
+            Int32 door =Convert.ToInt32(Console.ReadLine());
             // Your code goes below here
+           if (door == 1)
+            {
+                Console.WriteLine("you're gay");
+            }
+
+            else if (door == 2 ) 
+            { 
+                Console.WriteLine("you win $10,000 of student debt"); 
+            }
+
+            else if (door == 3)
+            {
+                Console.WriteLine("you're a minority");
+            }
+           else
+            {
+                Console.WriteLine("Pick a number between 1 and 3, take this seriously!");
+            }
+
+            Console.ReadLine();
 
         }
     }

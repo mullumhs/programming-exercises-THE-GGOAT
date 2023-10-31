@@ -23,6 +23,7 @@ Extension Tasks:
 Example:
 - Below is an example of the program's output:
 
+
     Please enter a number for X:
     7
     Please enter a number for Y:
@@ -53,7 +54,27 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
+            Console.WriteLine("Please enter a number for x");
+            double x = Convert.ToDouble(Console.ReadLine());
 
+            Console.WriteLine("Please enter a number for y");
+            double y = Convert.ToDouble(Console.ReadLine());
+
+
+            Console.WriteLine("What operation would you like to do?");
+            Console.WriteLine("1. Add");
+            Console.WriteLine("2. Subtract");
+
+            string operation = Console.ReadLine();
+
+            if (operation == "1")
+            {
+                Console.WriteLine($"{x} plus {y} = { x + y}");
+            }
+            else if (operation == "2")
+            {
+                Console.WriteLine($"{x} minus {y} = {x - y}");
+            }
 
             // Wait for any key before exiting
             Console.WriteLine();

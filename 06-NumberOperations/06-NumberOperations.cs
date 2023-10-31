@@ -61,10 +61,13 @@ namespace ProgrammingExercisesIST
             //Add
             Console.WriteLine($"{x} plus {y} = {x + y}");
 
+            //Minus
             Console.WriteLine($"{x} minus {y} = {x - y}");
 
+            //Times
             Console.WriteLine($"{x} times {y} = {x * y}");
 
+            //Divided
             Console.WriteLine($"{x} divided {y} = {x / y}");
 
             Console.ReadLine();
@@ -76,7 +79,21 @@ namespace ProgrammingExercisesIST
 ===============================================================================
 FEEDBACK AREA: Paste your AI feedback here before submission:
 ===============================================================================
+Great job on completing the task. Here are some points to consider:
 
+Code Structure & Logic: Your code is well-structured, and the logic is sound. You have successfully implemented the arithmetic operations as required.
+
+User Input: You've correctly used Console.ReadLine() and Convert.ToDouble() to obtain and convert user input.
+
+Variable Naming: Your variable names 'x' and 'y' are simple and appropriate for this task. However, for more complex programs, consider using more descriptive variable names that reflect their purpose in the program.
+
+Code Commenting: You've made appropriate use of comments to explain what each section of the code does. This is good practice and increases code readability and maintainability.
+
+Output Formatting: The use of string interpolation to format and output the results of the operations is excellent.
+
+Extension Tasks: It appears you've completed the first extension task by modifying the program to work with the 'double' type. However, there's no evidence of the second extension task, which was to research and implement the modulus operator.
+
+Keep up the good work and continue to explore more features of C#. Remember to attempt all extension tasks as they are designed to challenge you and enhance your learning.
 
 
 ===============================================================================
