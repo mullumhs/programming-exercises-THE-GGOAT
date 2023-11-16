@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design;
 
 /*
 ===============================================================================
@@ -50,14 +51,34 @@ namespace ProgrammingExercisesIST
             string choice = MainMenu();
 
             // Write your code here
+            if (choice == "1")
+            {
+                double KM = GetDistance("KM"); 
+                double Miles = ConvertKMToMiles(KM);
+                Console.WriteLine(Miles);
+            }
 
-
+            else if (choice == "2") 
+            {
+                double Miles = GetDistance("Miles");
+                double KM = ConvertMilesToKM(Miles);
+                Console.WriteLine(KM);
+            }
             // Wait for key press before exiting
             WaitForKeyPress();
         }
 
         // Create your functions here
+        static double ConvertMilesToKM(double KM) 
+        {
+            return KM * 1.609; 
+        }
 
+        static double ConvertKMToMiles(double Miles)
+        {
+            return Miles / 1.609;
+
+        }
 
 
         // Asks the user to enter a distance in the unit specified

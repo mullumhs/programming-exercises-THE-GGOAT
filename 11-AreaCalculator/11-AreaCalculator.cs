@@ -50,7 +50,61 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
+            Menushow();
+            String choice = Console.ReadLine();
 
+            if (choice == "1")
+            {
+                CircleArea(); 
+            }
+            else if (choice == "2")
+            {
+                RectangleArea();
+            }
+            else if (choice == "3")
+            {
+                TriangleArea();
+            }
+            WaitAndExit();
+        }
+
+        static void Menushow()
+        {
+            Console.WriteLine("Choose an Option:");
+            Console.WriteLine("1. Area of Circle");
+            Console.WriteLine("2. Area of Rectangle");
+            Console.WriteLine("3. Area of Triangle");
+
+        }
+
+        static void CircleArea()
+        {
+            Console.Write("Enter radius: ");
+            double radius = Convert.ToDouble(Console.ReadLine());
+            double area = Math.PI * Math.Pow(radius, 2);
+            Console.WriteLine($"The area of the circle is {area}");
+        }
+        static void RectangleArea()
+        {
+            Console.Write("Enter width: ");
+            double width = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter height: ");
+            double height = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"The area of the rectangle is {width * height}");
+        }
+
+        static void TriangleArea()
+        {
+            Console.Write("Enter base: ");
+            double bas = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter height");
+            double height1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"The area of the triangle is {(height1 * bas) / 2}");
+        }
+
+        static void WaitAndExit()
+        {
+            Console.ReadLine();
         }
     }
 }

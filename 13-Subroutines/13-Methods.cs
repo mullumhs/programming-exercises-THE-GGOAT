@@ -33,10 +33,21 @@ namespace ProgrammingExercisesIST
     {
         static void Main(string[] args)
         {
-            // Call the methods here
+            sayhello();
+            exit();
             
         }
 
+        static void sayhello() 
+        {
+        Console.WriteLine("Hello World.");
+        }
+
+        static void exit() 
+        {
+        Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
+        }
         // Write your methods here
 
     }
